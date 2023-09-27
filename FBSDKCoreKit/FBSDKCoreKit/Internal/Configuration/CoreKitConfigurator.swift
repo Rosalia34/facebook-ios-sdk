@@ -106,7 +106,9 @@ private extension CoreKitConfigurator {
       userDataStore: components.userDataStore,
       appEventsUtility: components.appEventsUtility,
       internalUtility: components.internalUtility,
-      capiReporter: components.capiReporter
+      capiReporter: components.capiReporter,
+      protectedModeManager: components.protectedModeManager,
+      macaRuleMatchingManager: components.macaRuleMatchingManager
     )
   }
 
@@ -314,6 +316,7 @@ private extension CoreKitConfigurator {
       onDeviceMLModelManager: components.modelManager,
       metadataIndexer: components.metadataIndexer,
       skAdNetworkReporter: components.skAdNetworkReporter,
+      skAdNetworkReporterV2: components.skAdNetworkReporterV2,
       codelessIndexer: components.codelessIndexer,
       swizzler: components.swizzler,
       aemReporter: components.aemReporter
